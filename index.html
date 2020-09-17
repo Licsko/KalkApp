@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Egy király oldal</title>
+</head>
+
+<body>
+  <h1>Kalk App</h1>
+  <small class="cim">for kis boltoknak</small>
+  <div class="container">
+    Ezzel az App-pal, könnyen kiszámíthatod az áruk Eladási árát!
+    <div class="input-field">
+      <input type="number" class="termek-ar" placeholder="A termék beszerzési ára"></input>
+    </div>
+    <div class="eladasi-ar-mezo" onload="">EREDMÉNY</div>
+
+    <h3>Egyéb áru</h3>
+    <small class="help-text">Nettó ár esetén:</small>
+    <div class="btnDIV">
+      <button onclick="otAFA()">5% ÁFA</button>
+      <button onclick="tNyolcAFA()">18% ÁFA</button>
+      <button onclick="hHetAFA()">27% ÁFA</button>
+    </div> <small class="help-text">Bruttó ár esetén:</small>
+
+    <div class="btnDIV">
+      <button class="haszonkulcs" onclick="csakHaszon50()">HASZONKULCS</button>
+    </div>
+    <h3>Tejtermék</h3>
+    <small class="help-text">Nettó ár esetén:</small>
+    <div class="btnDIV">
+      <button onclick="otAFATEJ()">5% ÁFA</button>
+      <button onclick="tNyolcAFATEJ()">18% ÁFA</button>
+      <button onclick="hHetAFATEJ()">27% ÁFA</button>
+    </div>
+    <small class="help-text">Bruttó ár esetén:</small>
+    <div class="btnDIV"><button class="haszonkulcs" onclick="csakHaszon45()">HASZONKULCS</button>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
