@@ -98,3 +98,8 @@ function csakHaszon45() {
     
 return eredmeny.innerHTML= "Eladási ár: <b>" + Number(eladasiAR.toFixed(0)) + ",-Ft</b><br><small>Árrés: <i>" + Number(arRes.toFixed(0)) + ",-Ft</i></small>";
 }
+
+function clearInput() {
+    var beszerzesiINPUT = document.querySelector('#termek-ar');
+    beszerzesiINPUT.value = "";
+  }
