@@ -61,7 +61,14 @@ h1 {
   display: flex;
   justify-content: center;
 }
-.container .input-field input{
+.container .radio-group{
+  width: 45%;
+}
+.container .radio-group input{
+  width: 45%;
+}
+
+.container .input-field .termek-ar{
   background-color: #fcdab7;
   text-align: center;
   width: 100%;
@@ -70,6 +77,15 @@ h1 {
   border-radius: 15px;
   padding: 8px;
 }
+.container .input-field .markup{
+  width: 20px;
+  margin-left: 60px;
+  cursor: pointer;
+}
+.container .input-field label{
+  cursor: pointer;
+}
+
 .container .btnDIV {
   width: 90%;
   padding: 0;
@@ -109,4 +125,8 @@ h1 {
 
 .container .help-text {
   margin: 5px;
+}
+
+.error {
+  color: #F0B49B;
 }

@@ -16,7 +16,18 @@
   <div class="container">
     Ezzel az App-pal, könnyen kiszámíthatod az áruk Eladási árát!
     <div class="input-field">
-      <input type="number" class="termek-ar" id="termek-ar" onclick="clearInput()" placeholder="A termék beszerzési ára"></input>
+      <input type="number" class="termek-ar" id="termek-ar" onclick="clearInput()"
+        placeholder="A termék beszerzési ára"></input>
+    </div>
+    <div class="input-field">
+      <div class=radio-group>
+        <input type="radio" class="markup" id="mark-up50" name="markup" onclick="biggerMarkup()"></input>
+        <label for="mark-up50">50%</label>
+      </div>
+      <div class=radio-group>
+        <input type="radio" class="markup" id="mark-up45" name="markup" onclick="smallerMarkup()"></input>
+        <label for="mark-up45">45%</label>
+      </div>
     </div>
     <div class="eladasi-ar-mezo" onload="">EREDMÉNY</div>
 
@@ -29,9 +40,9 @@
     </div> <small class="help-text">Bruttó ár esetén:</small>
 
     <div class="btnDIV">
-      <button class="haszonkulcs" onclick="csakHaszon50()">HASZONKULCS</button>
+      <button class="haszonkulcs" onclick="csakHaszon()">HASZONKULCS</button>
     </div>
-    <h3>Tejtermék</h3>
+    <!-- <h3>Tejtermék</h3>
     <small class="help-text">Nettó ár esetén:</small>
     <div class="btnDIV">
       <button onclick="otAFATEJ()">5% ÁFA</button>
@@ -41,7 +52,7 @@
     <small class="help-text">Bruttó ár esetén:</small>
     <div class="btnDIV"><button class="haszonkulcs" onclick="csakHaszon45()">HASZONKULCS</button>
     </div>
-  </div>
+  </div> -->
   <script src="js/main.js"></script>
 </body>
 
