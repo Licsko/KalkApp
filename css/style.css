@@ -129,3 +129,7 @@ h1 {
 .error {
   color: #F0B49B;
 }
+
+span {
+  font-size: 14px;
+}
